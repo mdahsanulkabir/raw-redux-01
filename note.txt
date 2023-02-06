@@ -1,0 +1,7 @@
+Middleware 
+    - is the suggested way to extend Redux with custom functionality
+    - it provides a third-party extension point between dispatching an action, and the moment it reaches the reducer
+    - it is used for loggin, crash reporting, performing asynchronous tasks etc
+
+
+example of middleware - redux-logger
