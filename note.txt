@@ -5,3 +5,42 @@ Middleware
 
 
 example of middleware - redux-logger
+
+
+
+actions 
+Synchronous action
+asynchronous actions - for example may require API calls
+
+
+
+
+state
+state = {
+    loading: true,
+    data : [],
+    error: ''
+}
+
+actions
+FETCH_USERS_REQUEST - fetch list of actionsFETCH_USERS_REQUEST
+case : FETCH_USERS_REQUEST
+    loading : true
+
+FETCH_USERS_SUCCESS
+case: FETCH_USERS_SUCCESS
+    loading : false
+    users : data(from API)
+
+FETCH_USERS_ERROR
+    loading : false
+    error : error (from API)
+
+
+
+Async action creator
+install axios
+install redux-thunk
+
+
+redux-thunk : it provides the ability of action creator to return a function instead of an action object
